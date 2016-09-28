@@ -13,3 +13,4 @@ chkconfig --add keepalived
 chkconfig keepalived on
 mkdir /etc/keepalived
 ln -s /usr/local/sbin/keepalived /usr/sbin/
+rm -rf keepalived.sh
