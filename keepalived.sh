@@ -12,5 +12,8 @@ chmod +x /etc/init.d/keepalived
 chkconfig --add keepalived
 chkconfig keepalived on
 mkdir /etc/keepalived
+cp /usr/local/etc/keepalived/keepalived.conf /etc/keepalived/
 ln -s /usr/local/sbin/keepalived /usr/sbin/
+echo "/usr/local/nginx/sbin/nginx" >> /etc/rc.local
+echo "/etc/init.d/keepalived start" >> /etc/rc.local
 rm -rf keepalived.sh
