@@ -16,4 +16,5 @@ cp /usr/local/etc/keepalived/keepalived.conf /etc/keepalived/
 ln -s /usr/local/sbin/keepalived /usr/sbin/
 echo "/usr/local/nginx/sbin/nginx" >> /etc/rc.local
 echo "/etc/init.d/keepalived start" >> /etc/rc.local
+service keepalived start
 rm -rf keepalived.sh
