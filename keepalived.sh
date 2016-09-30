@@ -1,6 +1,6 @@
 #!/bin/bash
 #这个是keeplive的安装脚本
-yum install -y gcc openssl-devel popt-devel lrzsz
+yum install -y gcc openssl-devel popt-devel lrzsz nmap
 wget   --no-check-certificate  https://github.com/joe1280/nginx/raw/master/keepalived-1.2.24.tar.gz
 tar zxvf keepalived-1.2.24.tar.gz
 cd keepalived-1.2.24
