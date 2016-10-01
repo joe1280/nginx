@@ -14,3 +14,4 @@ tar xzvf memcached-1.4.31.tar.gz
 cd memcached-1.4.31
 ./configure --with-libevent=/usr
 make && make install
+/usr/local/bin/memcached -d -m 512-u root -p 11211 -P /tmp/memcached.pid 
