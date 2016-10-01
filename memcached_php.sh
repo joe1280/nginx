@@ -13,5 +13,6 @@ cd memcached-2.2.0
 make && make install 
 cp /usr/local/php/lib/php/extensions/no-debug-non-zts-20100525/memcached.so /usr/local/php/lib/php/extensions/
 echo 'extension=memcached.so' >> /usr/local/php/etc/php.ini
+echo 'extension_dir=/usr/local/php/lib/php/extensions' >> /usr/local/php/etc/php.ini 
 service nginx restart
 service php-fpm reload
