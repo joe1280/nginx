@@ -7,5 +7,6 @@ cd phpredis
 make && make install
 cp /usr/local/php/lib/php/extensions/no-debug-non-zts-20100525/redis.so /usr/local/php/lib/php/extensions/
 echo 'extension=redis.so' >> /usr/local/php/etc/php.ini 
+echo 'extension_dir=/usr/local/php/lib/php/extensions' >> /usr/local/php/etc/php.ini 
 service nginx restart
 service php-fpm reload
