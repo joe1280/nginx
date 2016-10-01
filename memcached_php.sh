@@ -11,7 +11,7 @@ cd memcached-2.2.0
 /usr/local/php/bin/phpize
 ./configure --disable-memcached-sasl -enable-memcached -with-php-config=/usr/local/php/bin/php-config -with-zlib-dir -with-libmemcached-dir=/usr/local/libmemcached -prefix=/usr/local/phpmemcached
 make && make install 
-cp /usr/local/php/lib/php/extensions/no-debug-non-zts-20100525/memcached.so /usr/local/php/lib/php/extension/
+cp /usr/local/php/lib/php/extensions/no-debug-non-zts-20100525/memcached.so /usr/local/php/lib/php/extensions/
 echo 'extension=memcached.so' >> /usr/local/php/etc/php.ini
 service nginx restart
 service php-fpm reload
