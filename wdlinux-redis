@@ -1,0 +1,9 @@
+#!/bin/bash
+wget --no-check-certificate  http://download.redis.io/releases/redis-3.2.4.tar.gz
+tar xzvf redis-3.2.4.tar.gz
+cd  redis-3.2.4
+make  
+mkdir /www/wdlinux/redis
+cp src/redis* /www/wdlinux/redis
+cp redis.conf /www/wdlinux/redis
+/www/wdlinux/redis/redis-server redis.conf &
