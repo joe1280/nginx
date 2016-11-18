@@ -8,7 +8,6 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 iptables -A INPUT -p TCP --dport 440 -j ACCEPT
 iptables -A INPUT -p TCP --dport 22 -j ACCEPT
 iptables -A INPUT -p TCP --dport 137 -j ACCEPT
-iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-port 137
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 service iptables save
 service iptables restart
